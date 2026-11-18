@@ -7,6 +7,7 @@ from fastapi.testclient import TestClient
 
 from app import app
 
+
 client = TestClient(app)
 METRICS = json.loads(Path("artifacts/metrics.json").read_text())
 CONFIG = json.loads(Path("config.json").read_text())
